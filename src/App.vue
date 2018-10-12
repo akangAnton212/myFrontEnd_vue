@@ -1,36 +1,43 @@
 <template>
-  <div id="app">
+  <div>
+    <nav-app></nav-app>
+  </div>
+  <!-- <div id="app">
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <button type="button" class="btn btn-primary" id="awe" v-on:click="showAlert">Klik ME</button>
-  </div>
+  </div> -->
 </template>
 
 <script>
+import nav from "./component/nav.vue"
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome Kang Anton'
-    }
-  },
-  methods: {
-    showAlert(){
-        // Use sweetalert2
-        this.$swal(
-          'Good job!',
-          'You clicked the button!',
-          'success'
-        );
-    }
-  },
-  mounted () {
-    this.$nextTick(() => {
-      $("#awe").click(function(e){
-        //this.$swal("Aweeee");
-      })
-    });
+  components: {
+    'nav-app':nav
   }
+  // name: 'app',
+  // data () {
+  //   return {
+  //     msg: 'Welcome Kang Anton'
+  //   }
+  // },
+  // methods: {
+  //   showAlert(){
+  //       // Use sweetalert2
+  //       this.$swal(
+  //         'Good job!',
+  //         'You clicked the button!',
+  //         'success'
+  //       );
+  //   }
+  // },
+  // mounted () {
+  //   this.$nextTick(() => {
+  //     $("#awe").click(function(e){
+  //       //this.$swal("Aweeee");
+  //     })
+  //   });
+  // }
 }
 </script>
 
