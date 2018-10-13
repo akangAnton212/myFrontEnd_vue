@@ -15,6 +15,7 @@ import MyAside from './component/nav'
 import home from './component/home.vue'
 import pemasukan from './component/pemasukan.vue'
 import pengeluaran from './component/pengeluaran.vue' 
+import user from './component/user.vue'
 
 export default {
   name: 'app',
@@ -23,7 +24,8 @@ export default {
     MyAside,
     home,
     pemasukan,
-    pengeluaran
+    pengeluaran,
+    user
   }
 }
 </script>

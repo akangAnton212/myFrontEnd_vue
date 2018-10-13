@@ -7,6 +7,7 @@ import 'va/lib/css'
 import 'va/lib/script'
 import vueRouter from 'vue-router'
 import Routes from './routes'
+import VueResource from 'vue-resource'
 
 global.JQuery = JQuery
 global.$ = JQuery
@@ -14,6 +15,7 @@ global.$ = JQuery
 
 Vue.use(VueSweetalert2);
 Vue.use(vueRouter);
+Vue.use(VueResource);
 
 //regist routes nya
 const router = new vueRouter({
