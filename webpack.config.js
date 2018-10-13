@@ -31,7 +31,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|ttf|woff2|woff|eot)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
@@ -41,7 +41,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      'va'  : 'vue2-admin-lte/src'
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
